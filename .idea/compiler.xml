@@ -6,12 +6,16 @@
         <sourceOutputDir name="target/generated-sources/annotations" />
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
+        <module name="gradientdescent" />
         <module name="point-generator" />
+        <module name="simplemethod" />
       </profile>
     </annotationProcessing>
     <bytecodeTargetLevel>
       <module name="gradient-vertx" target="7" />
+      <module name="gradientdescent" target="7" />
       <module name="point-generator" target="7" />
+      <module name="simplemethod" target="7" />
     </bytecodeTargetLevel>
   </component>
 </project>

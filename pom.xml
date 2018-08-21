@@ -11,6 +11,8 @@
 
     <modules>
         <module>point-generator</module>
+        <module>simple-method</module>
+        <module>gradient-descent</module>
     </modules>
 
     <build>
