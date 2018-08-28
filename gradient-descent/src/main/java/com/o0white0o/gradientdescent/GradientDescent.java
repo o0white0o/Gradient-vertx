@@ -18,6 +18,11 @@ public class GradientDescent {
         return Math.abs(newCostFunction - oldCostFunction) < convergence;
     }
 
+    public static double pointGradient(int indexRegressor, List<Double> thetas, List<Double> regressors,Double value ) {
+        double regressor = (indexRegressor != regressors.size()) ? regressors.get(indexRegressor) : 1.0;
+        return calculationDifferenceValue(thetas, regressors,value) * regressor;
+    }
+
     public static double calculationCostFunction(List<Double> thetas, Tuple2<List<List<Double>>,List<Double>> setOfPoints) {
         double residualSquareSum = 0;
         List<List<Double>> vectorRegressors = setOfPoints._1();
