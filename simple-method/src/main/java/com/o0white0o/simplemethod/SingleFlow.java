@@ -5,20 +5,22 @@ import io.vertx.core.AbstractVerticle;
 import io.vertx.core.Future;
 import scala.Tuple2;
 import com.o0white0o.functions.LoadData;
+
 import com.o0white0o.gradientdescent.GradientDescent;
 
 
 import java.util.ArrayList;
 import java.util.Collections;
+
 import java.util.List;
 
 public class SingleFlow extends AbstractVerticle {
     private Tuple2<List<List<Double>>,List<Double>> setOfPoints;
     private static double CONVERGENCE = 0.000001;
 
-
     @Override
     public void start(Future<Void> future) throws Exception {
+
         long startTime = System.currentTimeMillis();
         setOfPoints = new LoadData("../set_of_points.data").getSetOfPoints();
         List<List<Double>> vectorRegressors = setOfPoints._1();
@@ -59,6 +61,11 @@ public class SingleFlow extends AbstractVerticle {
         System.out.printf("Optimizing finished (%d ms)\n\n", System.currentTimeMillis() - startTime);
         System.out.println("Amount of iterations: " + iterations +"\n");
         GradientDescent.printThetas(thetas);
+        setOfPoints = new LoadData("../set_of_points.data").getSetOfPoints();
+        List<List<Double>> vectorRegressors = setOfPoints._1();
+        List<Double> vectorValues = setOfPoints._2();
+        long startTime = System.currentTimeMillis();
+        for (Double value:vectorValues) {
+        }
     }
-
 }

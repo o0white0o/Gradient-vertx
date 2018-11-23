@@ -10,6 +10,7 @@ y - вектор наблюдений зависимой переменой y (v
 x - матрица факторов (vectorRegressors)
 
 b - параметры модели (Theta)
+
 ### Метод градиентного спуска (Теория)
 Градиентный спуск — метод нахождения локального экстремума (минимума или максимума) функции с помощью движения вдоль градиента.
 
@@ -32,6 +33,7 @@ b - параметры модели (Theta)
 ![alt text](https://pp.userapi.com/c847120/v847120635/c90e7/o_WbuCWR7tw.jpg)
 
 Все функции для градиентного спуска реализованы в классе **GradientDescent**
+
 ### point-generator
 Реализован класс для создание файла с исходными данными
 Параметрый по умолчанию: 
@@ -46,3 +48,4 @@ b - параметры модели (Theta)
  1. https://en.wikipedia.org/wiki/Linear_regression
  1. https://cse.buffalo.edu/faculty/miller/Courses/CSE633/Li-Hui-Fall-2012-CSE633.pdf
  1. https://medium.com/@lachlanmiller_52885/machine-learning-week-1-cost-function-gradient-descent-and-univariate-linear-regression-8f5fe69815fd
+
