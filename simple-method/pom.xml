@@ -22,6 +22,12 @@
             <version>${project.version}</version>
         </dependency>
 
+        <dependency>
+        <groupId>com.o0white0o</groupId>
+        <artifactId>gradient-descent</artifactId>
+        <version>${project.version}</version>
+    </dependency>
+
     </dependencies>
     <build>
         <plugins>
